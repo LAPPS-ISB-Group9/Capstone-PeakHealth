@@ -1,0 +1,172 @@
+/* Assesment.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f9fc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .assessment-container {
+    max-width: 600px;
+    height: 75.5vh;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .assessment-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Section toggle */
+  .section-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-toggle button {
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .section-toggle button.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Question container */
+  .question-container {
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .question-container h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .question-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .answer-options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .option-label input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .option-text {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-group button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .button-group button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .assessment-container {
+      padding: 10px;
+    }
+    
+    .assessment-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .section-toggle {
+      margin-bottom: 10px;
+    }
+    
+    .section-toggle button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+    
+    .question-container {
+      padding: 10px;
+    }
+    
+    .question-container h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    
+    .question-text {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    
+    .option-label {
+      margin-bottom: 8px;
+    }
+    
+    .option-text {
+      font-size: 12px;
+    }
+    
+    .button-group {
+      margin-top: 16px;
+    }
+    
+    .button-group button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  

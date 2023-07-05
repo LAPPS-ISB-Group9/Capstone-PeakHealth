@@ -1,0 +1,41 @@
+.footer-container {
+    background-color: #333; /* Dark gray background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-link-item {
+    margin-right: 20px;
+  }
+  
+  .footer-link-item:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-link-item a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer-text {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+  }
+  

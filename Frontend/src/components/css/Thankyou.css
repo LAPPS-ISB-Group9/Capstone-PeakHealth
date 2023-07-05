@@ -1,0 +1,94 @@
+.container {
+    text-align: center;
+    padding: 20px;
+    height: 80vh;
+  }
+  
+  .ty-h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .ty-p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    height: 30px;
+    margin: 20px auto;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0;
+    transition: width 0.5s ease;
+    border-radius: 50px;
+  }
+  
+  .progress-text {
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .feedback-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .rating-box {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .star {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .feedback-form-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .feedback-form-t input {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .feedback-form-t button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .feedback-form-t button:hover {
+    background-color: #45a049;
+  }
+  
+  

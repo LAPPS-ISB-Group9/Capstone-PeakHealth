@@ -1,0 +1,73 @@
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 78vh;
+  }
+  
+  .profile-container h2, .profile-container h3 {
+    margin-top: 0;
+  }
+  
+  .profile-details, .update-details {
+    margin-bottom: 20px;
+  }
+  
+  .profile-details p {
+    margin-bottom: 5px;
+  }
+  
+  .update-details form {
+    margin-bottom: 10px;
+  }
+  
+  .update-details .form-field {
+    margin-bottom: 10px;
+  }
+  
+  .update-details label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .update-details input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .update-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .update-details .success-message {
+    color: green;
+  }
+  
+  .update-details .error-message {
+    color: red;
+  }
+  
+  .profile-container .logout-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .profile-container .logout-button:hover {
+    background-color: #c82333;
+  }
+  

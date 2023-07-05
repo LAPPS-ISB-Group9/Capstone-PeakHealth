@@ -1,0 +1,59 @@
+.previous-scores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .score-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-side,
+  .right-side {
+    width: 45%;
+    padding: 20px;
+  }
+  
+  .left-side {
+    order: 1; /* Added to change the order */
+  }
+  
+  .right-side {
+    order: 2; /* Added to change the order */
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .score-box-c {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .score-item {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
