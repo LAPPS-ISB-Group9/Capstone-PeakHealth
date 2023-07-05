@@ -22,7 +22,7 @@ To run this project, you need to have the following installed:
 
 2. Clone the repository:
    ```shell
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/LAPPS-ISB-Group9/Model.git
 
 ## Steps to Pull Data
 1. Install the required dependencies:
@@ -74,9 +74,12 @@ pip install pandas scikit-learn nltk sentence_transformers
 
 ## Instructions
 
-1. Clone the repository to your local machine.
+1. Clone the repository:
+   ```shell
+   git clone https://github.com/LAPPS-ISB-Group9/Model.git
+   ```
 
-2. Install the required dependencies:
+3. Install the required dependencies:
    ```bash
    pip install pandas nltk sentence_transformers
 '''
@@ -93,3 +96,80 @@ This script reads the dataset, applies preprocessing to the text data, and calcu
 ## Results and Output
 The script generates a CSV file named "CR_HHH_bad_F.csv" containing the top 9 recommended videos for burnout reduction and personal achievement. The CSV file includes the search term, video URL, video title, video description, total views, and cosine similarity score.
 
+# 3. Model Evaluation
+
+# Description
+
+This code analyzes feedback data from a PostgreSQL database and performs various calculations and analyses. It uses Python and several libraries, including pandas, numpy, psycopg2, sqlalchemy, and textblob.
+
+## Getting Started
+
+To run this code, make sure you have the following prerequisites:
+
+- Python (version 3.6 or later)
+- PostgreSQL database
+- Required Python libraries (mentioned in the 'requirements.txt' file)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/LAPPS-ISB-Group9/Models.git
+   ```
+
+## File Name
+ph_model_evaluation.ipynb
+
+## Usage
+1. Install the required libraries:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+2.  Update the database connection details in the code:
+
+  ```python
+host = 'your-hostname'
+port = 'your-port'
+db = 'your-database-name'
+user = 'your-username'
+password = 'your-password'
+  ```
+3. Run the code:
+   ```bash
+   python ph_model_evaluation.ipynb
+   ```
+## Output
+
+### 1. Sentiment Analysis
+- Calculates the sentiment polarity of each feedback entry using TextBlob library.
+- Categorizes feedback into positive, negative, or neutral based on sentiment polarity.
+- Displays the count and percentage of feedback entries by sentiment category.
+
+### 2. Rating Analysis
+- Calculates the count of each rating.
+- Converts the rating column to a numeric type.
+- Defines positive recommendations as ratings of 4 or 5.
+- Calculates True Positives (TP), False Positives (FP), False Negatives (FN), Precision, and Recall.
+- Calculates relevance scores based on ratings.
+- Calculates Discounted Cumulative Gain (DCG), Ideal DCG (IDCG), and Normalized DCG (NDCG).
+- Calculates average NDCG.
+
+### 3. User-based Rating Analysis
+- Groups the data by user_id and calculates DCG, IDCG, and NDCG.
+- Calculates the average NDCG across all users.
+
+### 4. Precision and Average Precision Analysis
+- Defines relevant items based on ratings.
+- Calculates precision, average precision, and Mean Average Precision (MAP).
+
+### 5. Feedback Analysis by Rating
+- Groups the feedback data by rating and concatenates the feedback text.
+- Displays the feedback for each rating.
+
+### 6. Video Rating Analysis
+- Fetches data from the 'assesments_rating' table.
+- Calculates the mean like-dislike ratio and counts of each rating.
+- Identifies the most liked and disliked videos.
+- Identifies videos with high disagreement among ratings.
