@@ -180,6 +180,9 @@ password = 'your-password'
 ## Description
 This code performs text preprocessing, embedding generation, and similarity search using embeddings for a given dataset. It utilizes various libraries and techniques for text processing, including pandas, openai, numpy, h5py, scikit-learn, nltk, and BeautifulSoup.
 
+## File Name
+ph_recommendation (1).ipynb
+
 ## Requirements
 To run this code, you need the following libraries:
 
@@ -236,3 +239,58 @@ The CSV files include columns such as 'Video_URL', 'Video_Title', 'domain', and 
 
 
 
+# 5. Video Recommendation - Tensorflow
+
+## Description
+This is a recommendation system that suggests videos related to burnout based on the user's input. It utilizes natural language processing and machine learning techniques to analyze video descriptions and titles, and recommends the most relevant videos.
+
+## File Name
+tf_ph_recommend.ipynb
+
+## Requirements
+To run this system, you need the following dependencies:
+
+- Python (version 3.6 or higher)
+- Pandas (version 1.2.4 or higher)
+- NLTK (version 3.6.2 or higher)
+- Scikit-learn (version 0.24.2 or higher)
+- Sentence Transformers (version 1.2.0 or higher)
+- TensorFlow (version 2.5.0 or higher)
+- TensorFlow Hub (version 0.12.0 or higher)
+- NumPy (version 1.21.0 or higher)
+- Beautiful Soup (version 4.9.3 or higher)
+
+You can install these dependencies using pip:
+ ```python
+pip install pandas nltk scikit-learn sentence-transformers tensorflow tensorflow-hub numpy beautifulsoup4
+ ```
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/LAPPS-ISB-Group9/Models.git
+   ```
+2. Download NLTK resources by running the following Python code:
+
+   ```python
+import nltk
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+      ```
+
+### Usage
+1. Prepare the input data:
+   - Create a CSV file named yt_videos_meta.csv with the relevant video metadata. Ensure that it contains columns for Video_Title, Video_Description, Video_Length, Total_Views, and Video_URL.
+
+2. Configure the burnout domains and levels:
+   - Update the ee_level, dp_level, and pa_level variables in the main script to specify the desired burnout levels for each domain.
+
+3. Run the main script:
+ - Execute the main script to generate video recommendations based on the provided burnout domains and levels.
+
+4. View the recommended videos:
+   - The system will output a list of recommended videos based on the specified burnout domains and levels. The videos will be sorted by relevance and filtered based on minimum view count criteria.
