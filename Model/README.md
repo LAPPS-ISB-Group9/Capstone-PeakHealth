@@ -274,13 +274,13 @@ pip install pandas nltk scikit-learn sentence-transformers tensorflow tensorflow
    ```
 2. Download NLTK resources by running the following Python code:
 
-   ```python
+```python
 import nltk
 
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
-      ```
+```
 
 ### Usage
 1. Prepare the input data:
