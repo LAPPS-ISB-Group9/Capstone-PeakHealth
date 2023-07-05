@@ -102,6 +102,9 @@ The script generates a CSV file named "CR_HHH_bad_F.csv" containing the top 9 re
 
 This code analyzes feedback data from a PostgreSQL database and performs various calculations and analyses. It uses Python and several libraries, including pandas, numpy, psycopg2, sqlalchemy, and textblob.
 
+## File Name
+ph_model_evaluation.ipynb
+
 ## Getting Started
 
 To run this code, make sure you have the following prerequisites:
@@ -117,9 +120,6 @@ To run this code, make sure you have the following prerequisites:
    ```bash
    git clone https://github.com/LAPPS-ISB-Group9/Models.git
    ```
-
-## File Name
-ph_model_evaluation.ipynb
 
 ## Usage
 1. Install the required libraries:
@@ -173,3 +173,66 @@ password = 'your-password'
 - Calculates the mean like-dislike ratio and counts of each rating.
 - Identifies the most liked and disliked videos.
 - Identifies videos with high disagreement among ratings.
+
+
+# 4. Embedding Generation
+
+## Description
+This code performs text preprocessing, embedding generation, and similarity search using embeddings for a given dataset. It utilizes various libraries and techniques for text processing, including pandas, openai, numpy, h5py, scikit-learn, nltk, and BeautifulSoup.
+
+## Requirements
+To run this code, you need the following libraries:
+
+- pandas
+- openai
+- numpy
+- h5py
+- scikit-learn
+- nltk
+- BeautifulSoup
+
+You can install these libraries using the following command:
+
+   ```python
+pip install pandas openai numpy h5py scikit-learn nltk beautifulsoup4
+   ```
+You also need to download the required NLTK resources by running the following code once:
+   ```python
+import nltk
+nltk.download('stopwords')
+nltk.download('wordnet')
+   ```
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/LAPPS-ISB-Group9/Models.git
+   ```
+
+2. Set OpenAI API Key: Replace the value of openai.api_key variable with your OpenAI API key. You can obtain an API key by signing up for OpenAI services.
+
+3. Provide Data: Ensure that you have a source containing the dataset. Update the file path in the code if needed.
+
+4. Run the Code: Simply run the code, and it will perform the necessary text preprocessing, embedding generation, and similarity search. The results will be printed to the console and stored in output CSV files.
+
+## Usage
+1. Preprocessing and Embedding Generation:
+
+The code preprocesses the dataset by combining the 'Video_Title' and 'Video_Description' columns, applies text preprocessing techniques (removing URLs, HTML tags, punctuation, emojis, converting to lowercase, removing stopwords, and lemmatization), and generates embeddings for each text using OpenAI's text embedding model.
+
+2. Similarity Search:
+
+The code allows you to perform a similarity search by providing an external input text. It preprocesses the input, computes its embedding, calculates cosine similarity scores between the input embedding and all stored embeddings, and retrieves the top-k most similar rows from the dataset based on similarity scores.
+
+## Output:
+
+The code outputs two CSV files:
+
+Profile-BURNOUT.csv: Contains the top-k rows related to burnout based on similarity search.
+Profile-OverExt.csv: Contains the top-k rows related to overextension based on similarity search.
+The CSV files include columns such as 'Video_URL', 'Video_Title', 'domain', and 'Similarity Score'.
+
+
+
