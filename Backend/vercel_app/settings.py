@@ -97,7 +97,7 @@ DATABASES = {
         'NAME': 'ph_api',
         'USER': 'postgres',
         'PASSWORD': 'bvjsvbsiwrhfbbvk',
-        'HOST': '173.249.1.23',
+        'HOST': 'x.x.x.x', #update the IP address
         'PORT': '5432',
     }
 }
