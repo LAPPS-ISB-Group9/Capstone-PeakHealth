@@ -1,4 +1,4 @@
-# Project Repository
+# Capstone Peakhealth
 
 ## Project Description
 This Git repository contains the code for a project that involves a backend built with Django, a frontend app developed in React, and a recommendation engine and data pipeline using the YouTube API to a PostgreSQL database.
