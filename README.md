@@ -7,7 +7,7 @@ This Git repository contains the code for a project that involves a backend buil
 The repository is organized into the following folders:
 1. **Backend**: Contains the code related to the backend implementation built with Django.
 2. **Frontend**: Includes the code for the frontend app developed using React.
-3. **Recommendation Engine**: Contains the code for the recommendation engine and data pipeline, which utilize the YouTube API to extract data and store it in a PostgreSQL database.
+3. **Model**: Contains the code for the recommendation engine and data pipeline, which utilize the YouTube API to extract data and store it in a PostgreSQL database.
 
 ## Prerequisites and Installation Setup
 To run this project, ensure that you have the following prerequisites installed:
